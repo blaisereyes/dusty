@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background-color: #121212;
+    color: #f0f0f0;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.outer-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #1a1814 0%, #0d0b09 100%);
+    z-index: 0;
+}
+
+.rotating-world {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-origin: center center;
+    z-index: 1;
+}
+
+.background {
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    background-color: #1a1612;
+    border-radius: 1vw;
+    transition: transform 3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 2s;
+    z-index: 1;
+}
+
+.hourglass-container {
+    position: absolute;
+    top: 5vh;
+    width: 8vw;
+    height: 16vh;
+    z-index: 10;
+    transition: transform 3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-origin: center center;
+}
+
+.hourglass {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.hourglass-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 45%;
+    background-color: #d6cfc2;
+    clip-path: polygon(10% 0%, 90% 0%, 70% 100%, 30% 100%);
+    border-radius: 0.5vw 0.5vw 0 0;
+}
+
+.hourglass-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
+    background-color: #d6cfc2;
+    clip-path: polygon(30% 0%, 70% 0%, 90% 100%, 10% 100%);
+    border-radius: 0 0 0.5vw 0.5vw;
+}
+
+.hourglass-middle {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 10%;
+    background-color: #c2baa6;
+    clip-path: polygon(30% 0, 70% 0, 70% 100%, 30% 100%);
+}
+
+.hourglass-sand-top {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 60%;
+    height: 35%;
+    background-color: #c2b59e;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+    opacity: 0.9;
+    transition: height 60s linear;
+}
+
+.hourglass-sand-bottom {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    width: 60%;
+    height: 5%;
+    background-color: #c2b59e;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    opacity: 0.9;
+    transition: height 60s linear;
+}
+
+.crack {
+    position: absolute;
+    bottom: -0.3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.5vw;
+    height: 0.3vh;
+    background-color: #121212;
+    z-index: 11;
+}
+
+.sand-canvas {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.timer {
+    position: absolute;
+    font-size: 1.2vw;
+    color: #c2b59e;
+    z-index: 15;
+    opacity: 0.8;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    letter-spacing: 0.2vw;
+    transition: transform 3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.timer-tl {
+    top: 2vh;
+    left: 2vw;
+}
+
+.timer-tr {
+    top: 2vh;
+    right: 2vw;
+}
+
+.timer-bl {
+    bottom: 2vh;
+    left: 2vw;
+}
+
+.timer-br {
+    bottom: 2vh;
+    right: 2vw;
+}
+
+.title {
+    position: absolute;
+    top: 50vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 22vw;
+    font-weight: 600;
+    letter-spacing: 1vw;
+    color: #c2b59e;
+    opacity: 0.2;
+    transform: translateY(-50%);
+    z-index: 2;
+    pointer-events: none;
+    transition: transform 3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (max-width: 768px) {
+    .hourglass-container {
+        width: 16vw;
+        height: 12vh;
+    }
+    
+    .timer {
+        font-size: 3vw;
+    }
+    
+    .title {
+        font-size: 8vw;
+    }
+}
