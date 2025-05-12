@@ -1,6 +1,8 @@
 # 🏺 Dusty: Where Time Meets Physics
 
-Welcome to **Dusty**, the web-based hourglass simulation that will make you question why you're so mesmerized by falling sand. Seriously, you could be doing something productive right now, but instead, you're about to spend the next hour poking virtual sand with your cursor. No judgment here—we've all been there.
+Welcome to **Dusty**, the web-based hourglass simulation that will make you question why you're so mesmerized by falling sand. Seriously, you could be doing something productive right now, but instead, you're about to spend the next hour poking virtual sand with your cursor. No judgment here. We've all been there.
+
+Feel free to take my code and make it better, more visually appealing, or do the opposite and fuck it all up. Either way, I'd love to see your versions. Please reach out to me with your creations so I can see it take on a life of its own.
 
 ## What is This Sorcery?
 
