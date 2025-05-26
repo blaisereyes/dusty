@@ -10,7 +10,7 @@ Dusty is an interactive hourglass simulation that combines beautiful visuals wit
 
 Every 60 seconds, the entire world rotates, flipping the hourglass and starting the cycle anew. It's like watching your deadlines approach, except a lil bit prettier.
 
-## ✨ Features
+## Features
 
 - **Physics-Based Sand Simulation**: Each grain of sand is an individual particle with its own velocity, movement patterns, and slight color variation
 - **Realistic Particle Interactions**: Sand piles up naturally, flows around obstacles, and responds to gravity
@@ -20,7 +20,7 @@ Every 60 seconds, the entire world rotates, flipping the hourglass and starting 
 - **Aesthetic Visual Design**: Subtle color gradients and smooth animations create a calming experience
 - **Performance Optimized**: Efficient grid-based algorithm allows thousands of particles to be simulated simultaneously
 
-## 🔬 The Science Behind the Sand
+## The Science Behind the Sand
 
 ### Grid-Based Particle System
 
@@ -49,7 +49,7 @@ The simulation uses double-buffering (maintaining current and next-state grids) 
 
 When the timer hits zero, the entire world rotates 180 degrees in a smooth animation. The physics engine reverses gravity direction, giving all particles a velocity boost in the new direction.
 
-## 🖱️ User Interaction: Become the Sand Whisperer
+## User Interaction: Become the Sand Whisperer
 
 Move your cursor (or finger on touch devices) through the sand to create swirls, pathways, and patterns. The sand particles are repelled from your cursor based on proximity, with closer particles experiencing stronger forces.
 
@@ -58,7 +58,7 @@ The interaction uses an inverse-square force model:
 - Force strength decreases with the square of distance (just like gravity!)
 - Both vertical and horizontal forces are applied, creating swirling effects
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone this repository
 2. Open `index.html` in your browser
@@ -66,7 +66,7 @@ The interaction uses an inverse-square force model:
 4. Question your life choices as you spend the next hour mesmerized by falling pixels
 5. (Optional) Poke the sand and feel like a digital deity
 
-## 💻 Technical Implementation Details
+## Technical Implementation Details
 
 ### The Hourglass Visualization
 
