@@ -1,16 +1,16 @@
-# 🏺 Dusty: Where Time Meets Physics
+# 🏺 Dusty
 
-Welcome to **Dusty**, the web-based hourglass simulation that will make you question why you're so mesmerized by falling sand. Seriously, you could be doing something productive right now, but instead, you're about to spend the next hour poking virtual sand with your cursor. No judgment here. We've all been there.
+Welcome to **Dusty**, the web-based hourglass simulation that does nothing of value.
 
 Feel free to take my code and make it better, more visually appealing, or do the opposite and fuck it all up. Either way, I'd love to see your versions. Please reach out to me with your creations so I can see it take on a life of its own.
 
 ## What is This Sorcery?
 
-Dusty is an interactive hourglass simulation that combines beautiful visuals with realistic sand particle physics. Watch as time literally slips through your fingers (or, well, your screen) as thousands of individual sand particles cascade from top to bottom, creating mesmerizing patterns along the way.
+Dusty is an interactive hourglass simulation that combines beautiful visuals with realistic sand particle physics.
 
-Every 60 seconds, the entire world rotates, flipping the hourglass and starting the cycle anew. It's like watching your deadlines approach, except prettier.
+Every 60 seconds, the entire world rotates, flipping the hourglass and starting the cycle anew. It's like watching your deadlines approach, except a lil bit prettier.
 
-## ✨ Features That Will Make You Say "How Did They Do That?"
+## ✨ Features
 
 - **Physics-Based Sand Simulation**: Each grain of sand is an individual particle with its own velocity, movement patterns, and slight color variation
 - **Realistic Particle Interactions**: Sand piles up naturally, flows around obstacles, and responds to gravity
@@ -29,7 +29,7 @@ Dusty uses a cellular automaton approach to simulate sand physics. The entire sc
 ```
 "But wait," you say, "isn't that just a fancy way of saying you made a bunch of tiny squares?"
 
-Well, yes, but when you put thousands of tiny squares together and give them rules, magic happens.
+Well, yes, but when you put thousands of tiny squares together and give them rules, it looks kind of cool.
 ```
 
 ### The Sand Algorithm (Or: How to Make Your Browser Pretend It's a Beach)
@@ -47,7 +47,7 @@ The simulation uses double-buffering (maintaining current and next-state grids) 
 
 ### The Great Rotation
 
-When the timer hits zero, the entire world rotates 180 degrees in a smooth animation. This isn't just a visual flip—the physics engine actually reverses gravity direction, giving all particles a velocity boost in the new direction. It's like turning your monitor upside down, except your monitor doesn't have to deal with thousands of sand particles suddenly changing direction.
+When the timer hits zero, the entire world rotates 180 degrees in a smooth animation. The physics engine reverses gravity direction, giving all particles a velocity boost in the new direction.
 
 ## 🖱️ User Interaction: Become the Sand Whisperer
 
@@ -85,12 +85,6 @@ Dusty employs several optimizations to maintain smooth performance even with tho
 ### The Sand Canvas
 
 All sand particles are rendered on a full-screen HTML5 Canvas element. The canvas is cleared and redrawn each frame, with each particle colored based on its unique color value (a slight variation of the base sand color).
-
-## 🤔 Why Did I Make This?
-
-Because sometimes, the most captivating things are the simplest. There's something deeply satisfying about watching thousands of tiny particles obey the laws of physics, forming patterns and flows that emerge from simple rules.
-
-Also, I needed something to stare at during boring Zoom meetings. (Just kidding... or am I?)
 
 ## 🏖️ Final Thoughts
 
