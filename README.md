@@ -86,7 +86,7 @@ Dusty employs several optimizations to maintain smooth performance even with tho
 
 All sand particles are rendered on a full-screen HTML5 Canvas element. The canvas is cleared and redrawn each frame, with each particle colored based on its unique color value (a slight variation of the base sand color).
 
-## 🏖️ Final Thoughts
+## Final Thoughts
 
 Whether you're using Dusty as a relaxation tool, a physics demonstration, or just something pretty to look at while you contemplate the passage of time, I hope you enjoy watching the sand fall as much as I enjoyed making it fall.
 
